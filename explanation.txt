@@ -1,0 +1,13 @@
+Edward Muniz
+02/21/19
+
+Prompt:
+A explanation.txt that gives about 4 things that should be changed to use this for real
+
+1. Street address: In order to deliver to our customers we should have a complete address for them. We can add a streetaddress VARCHAR field to the people table for this.
+
+2. Inventory: We should be keeping track of product inventory, unless we're drop shipping. Easiest solution seems to be to add an INT SIGNED to the products table.
+
+2. Email: Every 'person' should have an email in our database. We may be able to use this, down the road, for sending junk mail or setting up logins. This can be a VARCHAR field in the people table.
+
+3. Order time: I used a TIMESTAMP data type for the orderdate in the orders table. We should be logging order times, not just the dates.
