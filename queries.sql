@@ -11,20 +11,21 @@ JOIN products pr ON (op.product_id=pr.product_id);
 
 /*
 Be able to find out the total cost of an order
+I've chosen 2300234, we can swap the order number in the where clause
 */
 
-
-SELECT o.ordernum,SUM(p.prodprice * op.quantity) AS "Order Total"
+SELECT o.ordernum,SUM(p.prodprice * op.quantity) AS "Order Total Cost"
 FROM orders o JOIN orders_products op ON (o.order_id = op.order_id)
 JOIN products p ON (p.product_id = op.product_id)
 WHERE o.ordernum = 2300234;
 
 /*
 Be able to find the total number of items for an order
+I've chosen 2300234, we can swap the order number in the where clause
 */
 
 
-SELECT o.ordernum,SUM(op.quantity) AS "Order Total"
+SELECT o.ordernum,SUM(op.quantity) AS "Order Total Quantity"
 FROM orders o JOIN orders_products op ON (o.order_id = op.order_id)
 JOIN products p ON (p.product_id = op.product_id)
 WHERE o.ordernum = 2300234;
@@ -51,3 +52,4 @@ JOIN people s ON (s.person_id = o.salesperson_id)
 JOIN orders_products op ON (o.order_id=op.order_id)
 JOIN products pr ON (op.product_id=pr.product_id)
 WHERE CONCAT(s.firstname,' ',s.lastname) = 'Sally Struthers';
+

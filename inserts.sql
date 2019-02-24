@@ -27,9 +27,15 @@ INSERT INTO products (prodname,prodprice) VALUES
 ("GoPro Black 4",495.00),
 ("Acoustic Foam",89.95),
 ("Bass Traps",125.00),
-("Mackie Mixer",NULL),
-("Guitar Picks",NULL),
-("Chorus Pedal",NULL);
+("Mackie Mixer",201.00),
+("Guitar Picks",3.95),
+("Chorus Pedal",99.00),
+("Acer Desktop",1200.00),
+("LG HD Monitor",300.00),
+("Focusrite Scarlet 2i2",125.00),
+("Focusrite Scarlet 2i4",179.00),
+("MXR Carbon Copy",189.00),
+("DBX 166XS Compressor",249.00);
 
 -- ---
 -- Inserting orders
@@ -64,3 +70,4 @@ INSERT INTO orders_products (order_id,product_id,quantity) VALUES
 ("7","11","1"),
 ("7","12","3"),
 ("7","13","1");
+
